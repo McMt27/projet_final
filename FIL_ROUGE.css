@@ -11,24 +11,42 @@
     font-style: normal;
 }
 
-.nom {
-    border-bottom: 1px #5a5a5a solid;
+body {
+    background-color: #041821;
+    color: white;
+    font-family: "yeseva-one-regular";
 }
 
-body {
-    
-    background-color: #000220;
-    color: white;
-    font-family: "montserrat-uniquifier";
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px rgba(229, 229, 229, 0.15) solid;
+}
+
+.dote {
+    color: #1bd79e
+}
+
+.reseaux_sociaux {
+    display: flex;
+    gap: 0.7em;
+}
 
 
+main {
+    margin-left: 100px;
+}
 
+.title {
+    color: #1bd79e
 }
 
 .txt {
-    color: #686868
+    color: #808080
 }
 
-h1 span {
-    color: rgb(72, 233, 185);
-  }
+
+
+
+
