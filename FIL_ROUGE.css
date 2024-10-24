@@ -1,52 +1,176 @@
+/* Police Yeseva One utilisée pour les titres */
 .yeseva-one-regular {
     font-family: "Yeseva One", serif;
-    font-weight: 400;
     font-style: normal;
 }
 
+/* Police Montserrat utilisée pour le texte général */
 .montserrat-uniquifier {
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
 }
 
+/* Style global du body */
 body {
-    background-color: #041821;
-    color: white;
-    font-family: "yeseva-one-regular";
+    background-color: #041821; /* Couleur de fond de la page */
+    color: white; /* Couleur du texte par défaut */
+    font-family: "Montserrat"; /* Police par défaut pour le corps du texte */
+    margin: 0;
+    padding: 0;
 }
 
+/* Style du header (en-tête) */
 .header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px rgba(229, 229, 229, 0.15) solid;
+    justify-content: space-between; /* Espace entre le nom et les icônes des réseaux sociaux */
+    align-items: center; /* Centrage vertical des éléments dans le header */
+    border-bottom: 2px rgba(229, 229, 229, 0.15) solid; /* Ligne de séparation sous le header */
 }
 
+/* Style spécifique pour le point après le nom Solène Avril */
 .dote {
-    color: #1bd79e
+    color: #1bd79e;
 }
 
+/* Style pour l'affichage des icônes de réseaux sociaux */
 .reseaux_sociaux {
     display: flex;
-    gap: 0.7em;
+    gap: 1em;
 }
 
-
+/* Style du contenu principal (main) */
 main {
-    margin-left: 100px;
+    padding: 100px; /* Ajoute un padding autour du contenu principal */
 }
 
+/* Style pour le titre principal de la page */
+.titre {
+    font-size: 35px;
+    font-family: "Yeseva One"; /* Utilisation de la police Yeseva One pour le titre */
+}
+
+/* Couleur spécifique pour les éléments ayant la classe "title" */
 .title {
-    color: #1bd79e
+    color: #1bd79e;
 }
 
+/* Style pour le paragraphe de texte */
 .txt {
-    color: #808080
+    color: #808080;
+    width: 50%; /* Le texte occupe 50% de la largeur du conteneur */
+    font-size: 15px;
+}
+
+/* Style des catégories de photographie */
+.categories {
+    display: flex;
+    justify-content: center; /* Centre les catégories au milieu de la page */
+    gap: 1em;
+    padding-top: 20px;
+    margin: 0;
+    font-size: small;
+}
+
+/* Couleur de fond spécifique pour la catégorie "PORTRAIT" */
+.vert {
+    background-color: #1bd79e;
+}
+
+/* Style pour la galerie d'images */
+.gallery {
+    display: grid; /* Utilisation de la grille CSS pour organiser les images */
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 200px); /* 4 colonnes avec des images de 200px */
+    width: auto;
+    justify-content: center; /* Centre la grille au milieu de la page */
+    margin: 20px auto;
+}
+
+/* Style des images dans la galerie */
+.gallery img {
+    width: 100%; /* Les images occupent 100% de la largeur de leur conteneur */
+    height: auto; /* Hauteur automatique pour garder les proportions */
+}
+
+/* Style du footer */
+footer {
+    text-align: center; /* Texte centré */
+    padding: 20px;
+    color: white;
+    background-color: #041821; 
+    font-size: x-small; 
 }
 
 
+.petit {
+    font-size: xx-small;
+}
 
+/* Media Queries pour adapter la mise en page aux tablettes */
+@media (max-width: 768px) {
+    main {
+        padding: 50px;
+    }
 
+    h1.titre {
+        font-size: 2em;
+    }
 
+    /* Adaptation de la grille d'images pour tablette */
+    .gallery {
+        grid-template-columns: repeat(5, 150px); /* 5 colonnes de 150px chacune */
+        grid-template-rows: repeat(3, 150px); /* 3 lignes de 150px */
+    }
+}
+
+/* Media Queries pour adapter la mise en page aux mobiles */
+@media (max-width: 320px) {
+    h1.titre {
+        font-size: 1.5em; 
+    }
+
+    main {
+        padding: 5px; 
+    }
+
+    /* Réorganisation du header pour empiler les éléments verticalement sur mobile */
+    .header {
+        display: flex;
+        flex-direction: column; /* Empile le contenu du header */
+        align-items: center; /* Centre les éléments horizontalement */
+        padding: 10px; 
+    }
+
+    .txt {
+        width: 100%; /* Le texte occupe toute la largeur sur mobile */
+        font-size: 12px;
+    }
+
+    .reseaux_sociaux {
+        margin-top: 10px; 
+    }
+
+    /* Adaptation des catégories pour mobile avec une taille de texte réduite */
+    .categories {
+        display: flex;
+        font-size: 8px; 
+        flex: 1; /* Les catégories prennent toute la largeur disponible */
+        justify-content: space-between; /* Espacement égal entre les catégories */
+        padding: 5px;
+    }
+
+    /* Adaptation de la grille d'images pour mobile */
+    .gallery {
+        grid-template-columns: repeat(3, 100px); /* 3 colonnes de 100px */
+        grid-template-rows: repeat(2, 100px); /* 2 lignes de 100px */
+    }
+
+    /* Cache les images supplémentaires pour limiter à 9 images sur mobile */
+    .gallery img:nth-child(n + 10) {
+        display: none;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}

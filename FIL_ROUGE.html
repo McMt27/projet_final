@@ -2,46 +2,80 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOLÈNE AVRIL.</title>
+    <meta charset="UTF-8"> <!-- Encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Assure un bon rendu responsive -->
+    <title>SOLÈNE AVRIL</title>
+
+    <!-- Importation des polices Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Kit FontAwesome pour l'utilisation des icônes des réseaux sociaux -->
+    <script src="https://kit.fontawesome.com/5f54a5c31c.js" crossorigin="anonymous"></script> 
+
+    <!-- Lien vers le fichier CSS -->
     <link rel="stylesheet" type="text/css" href="FIL_ROUGE.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap"
-        rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/5f54a5c31c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <div class="header">
             <h4>SOLÈNE AVRIL<span class="dote">.</span></h4>
-            <div class="reseaux_sociaux">
+            <nav class="reseaux_sociaux">
+                <!-- Icônes des réseaux sociaux -->
                 <i class="fa-brands fa-facebook fa-2xs"></i>
                 <i class="fa-brands fa-instagram fa-2xs"></i>
                 <i class="fa-brands fa-linkedin fa-2xs"></i>
                 <i class="fa-solid fa-circle-half-stroke fa-2xs"></i>
-            </div>
+            </nav>
         </div>
     </header>
 
     <main>
-        <h1>Hello,<br /> Je suis photogtaphe d'art,<br /><span class="title">créative & engagée.</span></h1>
-        <p class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis augue magna. Fusce fringilla
-            purus et sapien euismod ullamcorper. In lorem tellus, sollicitudin in feugiat sed, sodales vel leo</p>
+        <section>
+            <!-- Titre principal de la page avec une mise en forme spéciale pour le texte "créative & engagée" -->
+            <h1 class="titre">Hello,<br> Je suis photographe d'art,<br><span class="title">créative & engagée.</span></h1>
+            <p class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis augue magna. Fusce fringilla
+                purus et sapien euismod ullamcorper. In lorem tellus, sollicitudin in feugiat sed, sodales vel leo.</p>
+        </section>
+
+        <!-- Section des catégories de photographie -->
+        <div class="categories">
+            <!-- Liens représentant les différentes catégories de photographie -->
+            <a>NATURE</a>
+            <a class="vert">PORTRAIT</a> <!-- La classe "vert" met en évidence cette catégorie avec une couleur différente -->
+            <a>ART</a>
+            <a>URBAIN</a>
+            <a>ANIMAUX</a>
+        </div>
+
+        <!-- Section galerie d'images générées aléatoirement via Picsum -->
+        <div class="gallery">
+            <!-- Liste d'images aléatoires provenant de Picsum avec un numéro aléatoire à la fin de chaque URL -->
+            <img src="https://picsum.photos/200?random=1" alt="Image aléatoire 1">
+            <img src="https://picsum.photos/200?random=2" alt="Image aléatoire 2">
+            <img src="https://picsum.photos/200?random=3" alt="Image aléatoire 3">
+            <img src="https://picsum.photos/200?random=4" alt="Image aléatoire 4">
+            <img src="https://picsum.photos/200?random=5" alt="Image aléatoire 5">
+            <img src="https://picsum.photos/200?random=6" alt="Image aléatoire 6">
+            <img src="https://picsum.photos/200?random=7" alt="Image aléatoire 7">
+            <img src="https://picsum.photos/200?random=8" alt="Image aléatoire 8">
+            <img src="https://picsum.photos/200?random=9" alt="Image aléatoire 9">
+            <img src="https://picsum.photos/200?random=10" alt="Image aléatoire 10">
+            <img src="https://picsum.photos/200?random=11" alt="Image aléatoire 11">
+            <img src="https://picsum.photos/200?random=12" alt="Image aléatoire 12">
+            <img src="https://picsum.photos/200?random=13" alt="Image aléatoire 13">
+            <img src="https://picsum.photos/200?random=14" alt="Image aléatoire 14">
+            <img src="https://picsum.photos/200?random=15" alt="Image aléatoire 15">
         </div>
     </main>
+
+    <footer>
+        <p>©2024 SOLÈNE AVRIL</p>
+        <p class="petit">Exercice HTML - CSS</p>
+    </footer>
 </body>
 
-<footer>
+</html>
 
-
-</footer>
